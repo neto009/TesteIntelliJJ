@@ -18,7 +18,9 @@ public class Security {
         http.authorizeHttpRequests().antMatchers("/h2-console/**").permitAll().anyRequest().authenticated()
         .and()
         .csrf((csrf)-> csrf.ignoringAntMatchers("/h2-console/**"))
-        .headers().frameOptions().disable();
+        .headers().frameOptions().disable()
+        .and()
+        .httpBasic();
         return http.build();
     }
 }
