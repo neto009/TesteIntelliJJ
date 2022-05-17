@@ -1,21 +1,22 @@
-package com.example.demo.domain;
-
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package com.exercicio.leilao.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
-@Data
-@NoArgsConstructor
-public class Participante {
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor // construtor padrão
+@Entity
+public class Participante {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String nome, cpf;
+    private String nome,cpf;
+
+    
 }

@@ -1,10 +1,10 @@
-package com.example.demo;
+package com.exercicio.leilao;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class LeilaoApplicationTests {
 
 	@Test
 	void contextLoads() {
